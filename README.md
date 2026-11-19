@@ -3,9 +3,6 @@
 ## Overview
 A logistic regression model that predicts whether a Titanic passenger survived, served through a Flask API, packaged in Docker, and deployed on Hugging Face Spaces (a free cloud platform that runs Docker containers).
 
-## Live API
-Base URL: https://YOUR-USERNAME-titanic-model-api.hf.space
-Hugging Face Space: https://huggingface.co/spaces/YOUR-USERNAME/titanic-model-api
 
 ## Architecture
 Source files -> Hugging Face Spaces builds the Docker image from the Dockerfile (training the model during the build) -> runs the container with gunicorn and Flask on port 7860 -> public HTTPS endpoint.
@@ -56,4 +53,4 @@ Logistic Regression with imputation, scaling, and one-hot encoding in one pipeli
 ## Run Locally
 pip install -r requirements.txt, then python train_model.py, then python app.py.
 
-The API then runs at http://localhost:8080.
+
